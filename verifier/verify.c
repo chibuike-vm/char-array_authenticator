@@ -5,17 +5,14 @@ int main(void) {
 	char twit[30] = "Elon"; 
 	strcat(twit, " Musk");
 
-	printf("Who is the current owner of twitter: ");
+	printf("What is the first name of the current owner of twitter: ");
 	char answer[30];
 		
 	scanf("%29s", answer);
 
 	strcat(answer, " Musk");
 	
-	if (strcmp(twit, answer) == 0) {
-		printf("You are correct!\n Its %s", answer);
-	} else {
-		printf("You are wrong!\n %s", answer);
-	}
+	(strcmp(twit, answer) == 0) ? printf("You are correct!\nIts %s\n", answer) : printf("You are wrong!\n");
+
 	return 0;
 }
